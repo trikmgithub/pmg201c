@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson_1</title>
+    <style>
+        body {
+            margin: 10px 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Project key characteristics, Type of organization, Network diagram <a href="../index.html">back</a></h1>
+    <h2 style="text-align: center; left: -10px">Đề Spring 2024</h2>
+    <div style="display: flex;">
+        <div style="width: 50%;">
+            <img style="width: 100%; height: auto; margin-left: -30px;" src="./assets/slot1/anh1.jpg" />
+            <img style="width: 100%; height: auto;" src="./assets/slot1/anh2.jpg" />
+            <img style="width: 100%; height: auto;" src="./assets/slot1/anh3.jpg" />
+        </div>
+        <div style="width: 50%;">
+            <h2>Đề luyện thi cuối kỳ #1 - PMG201c</h2>
+            <p>
+                Hãy nhìn vào các dự án mà bạn đang tham gia, đã từng tham gia hoặc các dự án xung quanh bạn. Chọn một dự
+                án trong lĩnh vực học tập của bạn tại FU (ví dụ: dự án phần mềm cho SE), đưa ra các giải pháp hoặc câu
+                trả lời cho các yêu cầu sau dựa trên sự hiểu biết của bạn về dự án và các giả định liên quan.
+            </p>
+
+            <h3 id="ans1">Yêu cầu 1: <a href="#request1">ans</a></h3>
+            <p>
+                Mô tả chi tiết dự án trong đó bạn cần đề cập rõ ràng đến các đặc điểm chính:
+            </p>
+            <ul >
+                <li>Tiêu đề dự án</li>
+                <li>Mục đích/mục tiêu của dự án (duy nhất, cụ thể)</li>
+                <li>Thời gian thực hiện dự án (tạm thời)</li>
+                <li>Khách hàng/nhà tài trợ (được xác định rõ ràng)</li>
+                <li>Các mốc thời gian chính của dự án (hạn chế về thời gian)</li>
+                <li>Các ràng buộc khác của dự án (chi phí, nguồn lực)</li>
+            </ul>
+
+            <h3 id="ans2">Yêu cầu 2: <a href="#request2">ans</a></h3>
+            <p>
+                Theo bạn dự án đang sử dụng loại hình tổ chức nào và loại hình tổ chức nào bạn nghĩ nên hoặc nên được sử
+                dụng, kèm theo các lý do? Cung cấp các lý do liên quan cho câu trả lời của bạn.
+            </p>
+
+            <h3 id="ans3">Yêu cầu 3: <a href="#request3">ans</a></h3>
+            <p>
+                Xác định ít nhất 3 rủi ro đáng kể mà bạn nghĩ rằng dự án có thể đối mặt. Với mỗi rủi ro, hãy xác định
+                khả năng xảy ra của nó (xác suất) và mức độ ảnh hưởng nếu nó xảy ra. Tạo hệ thống chấm điểm của riêng
+                bạn cho xác suất và mức độ ảnh hưởng. Bạn có thể sử dụng mức Độ cao-Trung bình-Thấp; có thể sử dụng các
+                giá trị số hoặc phần trăm. Đưa ra một phản hồi cho mỗi rủi ro này.
+            </p>
+
+            <h3 id="ans4">Yêu cầu 4: <a href="#request4">ans</a></h3>
+            <p>Giả sử rằng bạn đã xác định và ước tính lịch trình dự án với các hoạt động cấp cao sau đây:</p>
+
+            <p>a) Sử dụng kỹ thuật phân tích đường găng để xác định thời gian tối thiểu hoàn thành dự án này</p>
+
+            <p>b) Trong tuần thứ 8, bạn đang thực hiện hoạt động B và phát hiện rằng cần tăng tốc lịch trình dự án để
+                khôi phục 3 tuần bị trễ. Đưa ra 2 giải pháp kèm theo giải thích và giả định (nếu cần) để đạt được điều
+                đó (cách giải pháp giúp ích và những khó khăn/tác động đối với dự án).</p>
+
+            <h3 id="ans5">Yêu cầu 5: <a href="#request5">ans</a></h3>
+            <p>Nhóm dự án của bạn đã hoàn thành khối lượng công việc tương đương $3.000 và đã chi tiêu $4.000 cho đến
+                nay. Giả sử bạn đã lập ngân sách $5.000 cho công việc dự kiến hoàn thành. Ban đầu, nhóm đã ước tính ngân
+                sách dự án là $9.000 và dự án cần 12 tháng để hoàn thành. Tính toán và đưa ra các tính toán và nhận xét
+                của bạn về tình trạng hiện tại của dự án, và các dự báo để hoàn thành dự án về mặt chi phí và tiến độ.
+            </p>
+
+
+        </div>
+    </div>
+    <!-- request 1 -->
+    <hr/>
+    <h2 style="text-align: center;">Bài làm</h2>
+    <div id="request1" style="display: flex;">
+        <div style="width: 50%;">
+            <h3>Request 1: Project Description <a href="#ans1">ques</a></h3>
+        
+            <ul>Project Title:</ul>
+            <p>FPT Student Learning Management (SLM) System</p>
+        
+            <ul>Project Purpose/Objectives:</ul>
+            <p>
+                The purpose of the SLM system is to facilitate efficient management and tracking of learning progress for both professors and students in FPT university. Key objectives include:
+            </p>
+            <ol>
+                <li>Providing administrators with tools to configure the system, manage subject information, and oversee user management.</li>
+                <li>Empowering professors to access assigned classes, monitor student lists, and evaluate student performance for each class.</li>
+                <li>Enabling students to register, access allocated classes, participate in online testing, submit assignments, and review evaluations from their trainers.</li>
+                <li>Generating reports on student grades, either by class or subject, to support academic assessment and decision-making processes.</li>
+            </ol>
+        
+            <ul>Project Timeframe:</ul>
+            <p>
+                The project is scheduled to be completed within 4 months, encompassing all phases of the software development life cycle, from requirements gathering to deployment.
+            </p>
+        
+            <ul>Customer/Sponsor:</ul>
+            <p>
+                The primary customer and sponsor of the project is FPT University. 
+            </p>
+            <p>
+                The to-be potential customer of the project is the academic institution or educational organization that will utilize the Student Learning Management System. This could be a university, college, or any institution offering academic courses.
+            </p>
+        
+            <ul>Project Milestones:</ul>
+            <p>Waterfall model:</p>
+            <ul>
+                <li>Requirements Gathering and Analysis (Week 1-2)</li>
+                <li>System Design (Week 3-4)</li>
+                <li>Development and UT Testing (Week 5-10)</li>
+                <li>Testing (IT, ST, UAT) (Week 11-12)</li>
+                <li>Deployment (Week 13-16)</li>
+            </ul>
+        
+            <ul>Other Project Constraints:</ul>
+            <ul>
+                <li>Cost: The project budget is $10,000.</li>
+                <li>Resources: The project team consists of 3 developers, 1 tester, 2 designers, 2 BAs, and project managers who must collaborate efficiently to meet project deadlines.</li>
+                <li>Technology Stack: Backend: Spring Boot. Front end: Angular. Deployment Environment: AWS Cloud.</li>
+            </ul>
+        </div>
+        <div style="padding-left: 30px; width: 50%;">
+            <h3>Yêu cầu 1: Mô tả Dự án</h3>
+        
+            <ul>Tiêu đề Dự án:</ul>
+            <p>Hệ thống Quản lý Học tập Sinh viên FPT (SLM)</p>
+        
+            <ul>Mục đích/Mục tiêu Dự án:</ul>
+            <p>
+                Mục đích của hệ thống SLM là tạo điều kiện cho việc quản lý và theo dõi tiến độ học tập một cách hiệu quả cho cả giảng viên và sinh viên tại trường đại học FPT. Các mục tiêu chính bao gồm:
+            </p>
+            <ol>
+                <li>Cung cấp cho các nhà quản trị công cụ để cấu hình hệ thống, quản lý thông tin môn học và giám sát quản lý người dùng.</li>
+                <li>Trao quyền cho giảng viên truy cập vào các lớp học được phân công, theo dõi danh sách sinh viên và đánh giá hiệu suất học tập của sinh viên cho mỗi lớp học.</li>
+                <li>Cho phép sinh viên đăng ký, truy cập vào các lớp học được phân bổ, tham gia kiểm tra trực tuyến, nộp bài tập và xem đánh giá từ giảng viên của họ.</li>
+                <li>Thống kê báo cáo về điểm số của sinh viên, theo lớp học hoặc môn học, để hỗ trợ đánh giá học thuật và quy trình ra quyết định.</li>
+            </ol>
+        
+            <ul>Thời gian Dự án:</ul>
+            <p>
+                Dự án được dự kiến hoàn thành trong vòng 4 tháng, bao gồm tất cả các giai đoạn của vòng đời phát triển phần mềm, từ thu thập yêu cầu đến triển khai.
+            </p>
+        
+            <ul>Khách hàng/Người tài trợ:</ul>
+            <p>
+                Khách hàng chính và người tài trợ của dự án là Trường Đại học FPT.
+            </p>
+            <p>
+                Khách hàng tiềm năng trong tương lai của dự án là các tổ chức học thuật hoặc tổ chức giáo dục sẽ sử dụng Hệ thống Quản lý Học tập Sinh viên. Điều này có thể là một trường đại học, cao đẳng, hoặc bất kỳ tổ chức nào cung cấp các khóa học học thuật.
+            </p>
+        
+            <ul>Các Mốc Thời gian của Dự án:</ul>
+            <p>Mô hình Waterfall:</p>
+            <ul>
+                <li>Thu thập và Phân tích yêu cầu (Tuần 1-2)</li>
+                <li>Thiết kế hệ thống (Tuần 3-4)</li>
+                <li>Phát triển và Kiểm thử UT (Tuần 5-10)</li>
+                <li>Kiểm thử (IT, ST, UAT) (Tuần 11-12)</li>
+                <li>Triển khai (Tuần 13-16)</li>
+            </ul>
+        
+            <ul>Các Ràng buộc Khác của Dự án:</ul>
+            <ul>
+                <li>Chi phí: Ngân sách dự án là 10.000 USD.</li>
+                <li>Tài nguyên: Nhóm dự án bao gồm 3 lập trình viên, 1 tester, 2 nhà thiết kế, 2 BA và các quản lý dự án cần phối hợp hiệu quả để đạt được thời hạn của dự án.</li>
+                <li>Technology Stack: Backend: Spring Boot. Frontend: Angular. Môi trường triển khai: AWS Cloud.</li>
+            </ul>
+        </div>
+    </div>
+    <!-- request 2 -->
+    <hr/>
+    <div style="display: flex;">
+        <div style="width: 50%;">
+            <h3 id="request2">Request 2: Organization Type <a href="#ans2">ques</a></h3>
+            <ul>
+                <li>Ref: <a href="https://viblo.asia/p/cau-truc-to-chuc-kieu-matrix-loi-diem-cua-strong-matrix-DKBvdwnxkdX" target="_blank">Cấu trúc tổ chức kiểu Matrix</a></li>
+            </ul>
+        
+            <p>
+                Considering the criticality of timely delivery and the need for close coordination among team members, a projectized organization structure could be more suitable. In a projectized structure, resources are dedicated exclusively to the project, leading to a more focused approach and faster decision-making. This would be beneficial for meeting the tight 4-month timeframe of the project.
+            </p>
+        
+            <ul>Reasons for Choosing a Projectized Organization:</ul>
+            <ol>
+                <li>Clear Project Focus: In a projectized structure, team members are solely dedicated to the project, ensuring undivided attention and focus on meeting project objectives within the specified timeframe.</li>
+                <li>Streamlined Communication: With a dedicated project team, communication flows more smoothly, leading to quicker decision-making and problem-solving.</li>
+                <li>Faster Response to Changes: Projectized organizations are more agile and can adapt quickly to changing project requirements or external factors, which is crucial for meeting deadlines.</li>
+                <li>Accountability: Each team member has clear roles and responsibilities within the project, enhancing accountability and ownership of tasks.</li>
+            </ol>
+        
+            <p>
+                By adopting a projectized organization structure, the project team can maximize efficiency, minimize delays, and ensure successful delivery of the Student Learning Management System within the stipulated 4-month timeframe.
+            </p>
+        </div>
+        
+        <div style="width: 50%; padding-left: 30px;">
+            <h3>Yêu cầu 2: Loại Hình Tổ Chức</h3>
+            <ul>
+                <li>Tham khảo: <a href="https://viblo.asia/p/cau-truc-to-chuc-kieu-matrix-loi-diem-cua-strong-matrix-DKBvdwnxkdX" target="_blank">Cấu trúc tổ chức kiểu Matrix</a></li>
+            </ul>
+        
+            <p>
+                Xét đến tính cấp thiết của việc giao hàng đúng hạn và nhu cầu phối hợp chặt chẽ giữa các thành viên trong nhóm, cấu trúc tổ chức dự án có thể phù hợp hơn. Trong một cấu trúc dự án, tài nguyên được dành riêng hoàn toàn cho dự án, dẫn đến cách tiếp cận tập trung hơn và quyết định nhanh hơn. Điều này sẽ có lợi cho việc đáp ứng khung thời gian chặt chẽ 4 tháng của dự án.
+            </p>
+        
+            <ul>Những lý do để chọn Cấu trúc Tổ chức Dự án:</ul>
+            <ol>
+                <li>Định hướng dự án rõ ràng: Trong cấu trúc dự án, các thành viên trong nhóm hoàn toàn dành riêng cho dự án, đảm bảo sự chú ý và tập trung không bị phân tâm vào việc đạt được các mục tiêu của dự án trong khung thời gian đã xác định.</li>
+                <li>Giao tiếp mạch lạc: Với một nhóm dự án được phân công, việc giao tiếp diễn ra trôi chảy hơn, dẫn đến việc ra quyết định và giải quyết vấn đề nhanh chóng hơn.</li>
+                <li>Phản ứng nhanh hơn với sự thay đổi: Các tổ chức dự án linh hoạt hơn và có thể thích ứng nhanh chóng với các yêu cầu dự án thay đổi hoặc các yếu tố bên ngoài, điều này rất quan trọng để đáp ứng thời hạn.</li>
+                <li>Trách nhiệm rõ ràng: Mỗi thành viên trong nhóm có vai trò và trách nhiệm rõ ràng trong dự án, nâng cao tính trách nhiệm và sự sở hữu đối với các nhiệm vụ.</li>
+            </ol>
+        
+            <p>
+                Bằng cách áp dụng cấu trúc tổ chức dự án, nhóm dự án có thể tối đa hóa hiệu suất, giảm thiểu sự chậm trễ và đảm bảo giao hàng thành công cho Hệ thống Quản lý Học tập Sinh viên trong thời gian quy định 4 tháng.
+            </p>
+        </div>
+        
+    </div>
+    <!-- request 3 -->
+    <hr/>
+    <div style="display: flex;">
+        <div style="width: 50%;">
+            <h3 id="request3">Request 3: Risk - Mitigation Plan <a href="#ans3">ques</a></h3>
+        
+            <ul><b>Risk Title 1: Wrong Budget Estimate and Cost Overruns</b></ul>
+            <li>Possibility: Medium</li>
+            <li>Impact: High</li>
+            <li>Mitigation Plan: Add a little amount of buffer for the budget (around 10%), careful estimation.</li>
+            <li>Contingency Plan: Cut down on the project scope.</li>
+        
+            <ul><b>Risk Title 2: The Project Schedule is Too Tight; It’s Hard to Complete This Project on Time</b></ul>
+            <li>Possibility: High</li>
+            <li>Impact: High</li>
+            <li>Mitigation Plan: Set the priority for each of the activities.</li>
+            <li>Contingency Plan: Negotiate with the customer to reschedule.</li>
+        
+            <ul><b>Risk Title 3: Project Manager has Poor Management Skill</b></ul>
+            <li>Possibility: Medium</li>
+            <li>Impact: Medium</li>
+            <li>Mitigation Plan: Plan leadership training for the manager, provide PM learning material on Udemy.</li>
+            <li>Contingency Plan: Choose another one as a sub PM in order to support management tasks.</li>
+        
+            <ul><b>Risk Title 4: A Lack of Cooperation Negatively Affects Your Member Productivity</b></ul>
+            <li>Possibility: Medium</li>
+            <li>Impact: Medium</li>
+            <li>Mitigation Plan: Encourage each team member in his task, and inspire them to greater efforts.</li>
+            <li>Contingency Plan: Encourage each team member in his task, and inspire them to greater efforts.</li>
+        </div>
+        <div style="width: 50%; padding-left: 30px;">
+            <h3>Yêu cầu 3: Kế Hoạch Giảm Thiểu Rủi Ro</h3>
+        
+            <ul><b>Tiêu Đề Rủi Ro 1: Dự Toán Ngân Sách Sai và Chi Phí Vượt Quá</b></ul>
+            <li>Khả Năng Xảy Ra: Trung Bình</li>
+            <li>Tác Động: Cao</li>
+            <li>Kế Hoạch Giảm Thiểu: Thêm một ít ngân sách dự phòng (khoảng 10%), ước tính cẩn thận.</li>
+            <li>Kế Hoạch Dự Phòng: Cắt giảm phạm vi dự án.</li>
+        
+            <ul><b>Tiêu Đề Rủi Ro 2: Thời Gian Dự Án Quá Chật; Khó Có Thể Hoàn Thành Dự Án Đúng Hạn</b></ul>
+            <li>Khả Năng Xảy Ra: Cao</li>
+            <li>Tác Động: Cao</li>
+            <li>Kế Hoạch Giảm Thiểu: Đặt ưu tiên cho từng hoạt động.</li>
+            <li>Kế Hoạch Dự Phòng: Thương lượng với khách hàng để thay đổi thời gian biểu.</li>
+        
+            <ul><b>Tiêu Đề Rủi Ro 3: Quản Lý Dự Án Có Kỹ Năng Quản Lý Kém</b></ul>
+            <li>Khả Năng Xảy Ra: Trung Bình</li>
+            <li>Tác Động: Trung Bình</li>
+            <li>Kế Hoạch Giảm Thiểu: Lên kế hoạch đào tạo lãnh đạo cho quản lý, cung cấp tài liệu học về quản lý dự án trên Udemy.</li>
+            <li>Kế Hoạch Dự Phòng: Chọn một người khác làm phó quản lý dự án để hỗ trợ các nhiệm vụ quản lý.</li>
+        
+            <ul><b>Tiêu Đề Rủi Ro 4: Thiếu Hợp Tác Ảnh Hưởng Tiêu Cực Đến Năng Suất Của Thành Viên</b></ul>
+            <li>Khả Năng Xảy Ra: Trung Bình</li>
+            <li>Tác Động: Trung Bình</li>
+            <li>Kế Hoạch Giảm Thiểu: Khuyến khích từng thành viên trong nhóm hoàn thành nhiệm vụ của mình và truyền cảm hứng cho họ nỗ lực hơn nữa.</li>
+            <li>Kế Hoạch Dự Phòng: Khuyến khích từng thành viên trong nhóm hoàn thành nhiệm vụ của mình và truyền cảm hứng cho họ nỗ lực hơn nữa.</li>
+        </div>
+                
+    </div>
+    <div>
+        <p>Tham khảo thêm: <img style="width: 100%;" src="./assets/slot1/anh6.png" alt="riskplan"></p>
+    </div>
+    <!-- request 4 -->
+    <hr/>
+    <div style="display: flex;">
+       <div style="width: 50%;">
+        <h3 id="request4">Request 4: Project Scheduling <a href="#ans4">ques</a></h3>
+        
+        <h4>Predecessor Activities</h4>
+        <img style="width: 80%;" src="./assets/slot1/anh5.png" alt="Predecessor">
+        <p>
+            Path 1: Start -> A -> B -> C -> F -> I -> End Duration 16 weeks
+        </p>
+        <p style="color: red;">
+            Path 2: Start -> A -> B -> D -> G -> I -> End Duration 19 weeks
+        </p>
+        <p>
+            Path 3: Start -> A -> B -> D -> H -> End Duration 15 weeks
+        </p>
+        <p>
+            Path 4: Start -> A -> B -> E -> H -> End Duration 17 weeks
+        </p>
+    
+        <p>
+            So the critical path is Path 2: Start -> A -> B -> D -> G -> I -> End Duration 19 weeks.<br/>
+            The minimum duration to complete this project is 19 weeks.
+        </p>
+    
+        <h4>Cách dùng Critical path method để xác định duration</h4>
+        <p>
+            <strong>ES:</strong> Early start thời gian sớm nhất để bắt đầu 1 công việc.<br>
+            <strong>EF:</strong> Early finish thời gian sớm nhất để mình kết thúc 1 công việc.<br>
+            <strong>LS:</strong> Late start thời gian bắt đầu muộn nhất.<br>
+            <strong>LF:</strong> Late finish thời gian kết thúc muộn nhất có thể.<br>
+        </p>
+    
+        <p>
+            <strong>Forward Pass:</strong><br>
+            <strong>Backward Pass:</strong><br>
+        </p>
+    
+        <p>
+            Float bằng LS - ES bằng LF - EF
+        </p>
+        <img style="width: 80%;" src="./assets/slot1/anh4.png" alt="float">
+
+    
+        <h4>Answer:</h4>
+        <p>
+            Currently the project is 3 weeks behind the schedule. In order to make a feasible plan to recover, I will shorten the project by 3 weeks compared to the planned schedule. 
+            If you want to shorten the project time by 3 weeks, which means the new duration of the project (assuming no delay) is 16 weeks; no path can exceed this number. 
+            First of all, when calculating the activity to decrease the duration, you have to consider all the tasks in the critical path—the path that has the longest duration. 
+            But now, 8 weeks have passed (now you’re in task B), so we only have a way to shorten the time in tasks D, G, and I. 
+            The appropriate choice is to focus on task G because a task with a duration of 5 weeks should be prioritized to shorten the time. 
+            So we will have a plan to shorten task G from 5 weeks to only 2 weeks.
+        </p>
+        
+        <p>
+            However, after the critical path has been reduced to 16 weeks, Path 4 still exceeds this new duration (Path 5’s duration is 17 weeks). 
+            Obviously, we have to reduce Path 4 by 1 week. Task E should be prioritized to reduce by 1 week as it has a longer duration than task H.
+        </p>
+        
+        <p>
+            Briefly, in order to reduce the project duration by 3 weeks, we have to shorten task G by 3 weeks and task E by 1 week. 
+            The shortening methods are as follows:
+        </p>
+        
+        <h4>Crashing Method:</h4>
+        <ul>
+            <li>Solution 1: Add people to join the project to complete task G earlier by 3 weeks and task E earlier by 1 week.</li>
+            <li>Solution 2: Force the team to work overtime on tasks G and E.</li>
+            <li>Solution 3: Reward the team if they can complete task G earlier by 3 weeks and task E earlier by 1 week.</li>
+            <li>Note: Crashing will increase cost.</li>
+        </ul>
+    
+        <h4>Apply Fast Tracking Method:</h4>
+        <ul>
+            <li>Overlap task D and G.</li>
+            <li>Overlap task E and H.</li>
+        </ul>
+    </div>
+    <div style="width: 50%; padding-left: 30px;">
+
+        <h3>Yêu Cầu 4: Lập Kế Hoạch Dự Án</h3>
+        
+        <h4>Các Hoạt Động Tiền Thân</h4>
+        <img style="width: 80%;" src="./assets/slot1/anh5.png" alt="Predecessor">
+        <p>
+            Đường 1: Bắt đầu -> A -> B -> C -> F -> I -> Kết thúc, Thời gian 16 tuần
+        </p>
+        <p style="color: red;">
+            Đường 2: Bắt đầu -> A -> B -> D -> G -> I -> Kết thúc, Thời gian 19 tuần
+        </p>
+        <p>
+            Đường 3: Bắt đầu -> A -> B -> D -> H -> Kết thúc, Thời gian 15 tuần
+        </p>
+        <p>
+            Đường 4: Bắt đầu -> A -> B -> E -> H -> Kết thúc, Thời gian 17 tuần
+        </p>
+    
+        <p>
+            Vậy đường đi quan trọng là Đường 2: Bắt đầu -> A -> B -> D -> G -> I -> Kết thúc, Thời gian 19 tuần.
+            Thời gian tối thiểu để hoàn thành dự án này là 19 tuần.
+        </p>
+    
+        <h4>Cách Dùng Phương Pháp Đường Đi Quan Trọng Để Xác Định Thời Gian</h4>
+        <p>
+            <strong>ES:</strong> Thời gian sớm nhất để bắt đầu một công việc.<br>
+            <strong>EF:</strong> Thời gian sớm nhất để kết thúc một công việc.<br>
+            <strong>LS:</strong> Thời gian bắt đầu muộn nhất.<br>
+            <strong>LF:</strong> Thời gian kết thúc muộn nhất có thể.<br>
+        </p>
+    
+        <p>
+            <strong>Forward Pass:</strong><br>
+            <strong>Backward Pass:</strong><br>
+        </p>
+    
+        <p>
+            Float bằng LS - ES bằng LF - EF
+        </p>
+        <img style="width: 80%;" src="./assets/slot1/anh4.png" alt="float">
+    
+        <h4>Phân Tích:</h4>
+        <p>
+            Hiện tại, dự án đang chậm 3 tuần so với kế hoạch. Để lập một kế hoạch khả thi để phục hồi, tôi sẽ rút ngắn dự án 3 tuần so với kế hoạch đã định. 
+            Nếu bạn muốn rút ngắn thời gian dự án 3 tuần, điều này có nghĩa là thời gian mới của dự án (giả sử không có trì hoãn) là 16 tuần; không có đường nào có thể vượt quá con số này. 
+            Trước hết, khi tính toán các hoạt động để giảm thời gian, bạn phải xem xét tất cả các nhiệm vụ trong đường đi quan trọng—đường có thời gian dài nhất. 
+            Nhưng bây giờ, đã trôi qua 8 tuần (bây giờ bạn đang ở nhiệm vụ B), vì vậy chúng ta chỉ còn cách rút ngắn thời gian trong các nhiệm vụ D, G và I. 
+            Lựa chọn phù hợp là tập trung vào nhiệm vụ G vì nhiệm vụ có thời gian 5 tuần nên được ưu tiên rút ngắn thời gian. 
+            Vì vậy, chúng tôi sẽ có một kế hoạch để rút ngắn nhiệm vụ G từ 5 tuần xuống chỉ còn 2 tuần.
+        </p>
+        
+        <p>
+            Tuy nhiên, sau khi đường đi quan trọng được rút ngắn còn 16 tuần, Đường 4 vẫn vượt quá thời gian mới này (thời gian của Đường 5 là 17 tuần). 
+            Rõ ràng, chúng ta phải giảm Đường 4 đi 1 tuần. Nhiệm vụ E nên được ưu tiên để giảm đi 1 tuần vì nó có thời gian dài hơn nhiệm vụ H.
+        </p>
+        
+        <p>
+            Tóm lại, để giảm thời gian dự án 3 tuần, chúng ta phải rút ngắn nhiệm vụ G 3 tuần và nhiệm vụ E 1 tuần. 
+            Các phương pháp rút ngắn như sau:
+        </p>
+        
+        <h4>Phương Pháp Crashing:</h4>
+        <ul>
+            <li>Giải pháp 1: Thêm người tham gia dự án để hoàn thành nhiệm vụ G sớm hơn 3 tuần và nhiệm vụ E sớm hơn 1 tuần.</li>
+            <li>Giải pháp 2: Ép đội làm việc ngoài giờ cho các nhiệm vụ G và E.</li>
+            <li>Giải pháp 3: Thưởng cho đội nếu họ có thể hoàn thành nhiệm vụ G sớm hơn 3 tuần và nhiệm vụ E sớm hơn 1 tuần.</li>
+            <li>Lưu ý: Phương pháp Crashing sẽ làm tăng chi phí.</li>
+        </ul>
+    
+        <h4>Áp Dụng Phương Pháp Fast Tracking:</h4>
+        <ul>
+            <li>Chồng chéo nhiệm vụ D và G.</li>
+            <li>Chồng chéo nhiệm vụ E và H.</li>
+        </ul>
+    </div>
+    
+    
+    </div>
+    <!-- request 5 -->
+    <hr/>
+    <div style="display: flex;">
+        <div style="width: 50%;">
+        
+        <h3 id="request5">Request 5: EVM <a href="#ans5">ques</a></h3>
+        
+        <p>
+            <strong>EV:</strong> 3000<br>
+            <strong>AC:</strong> 4000<br>
+            <strong>PV:</strong> 5000<br>
+            <strong>BAC:</strong> 9000<br>
+            <strong>DAC:</strong> 12 months
+        </p>
+        
+        <h4>Cost Variance (CV):</h4>
+        <p>
+            CV = EV - AC = 3000 - 4000 = -1000 < 0 → over budget
+        </p>
+        
+        <h4>Schedule Variance (SV):</h4>
+        <p>
+            SV = EV - PV = 3000 - 5000 = -2000 < 0 → behind schedule
+        </p>
+        
+        <h4>Cost Performance Index (CPI):</h4>
+        <p>
+            CPI = EV / AC = 3000 / 4000 = 0.75 < 1 → over budget
+        </p>
+        
+        <h4>Schedule Performance Index (SPI):</h4>
+        <p>
+            SPI = EV / PV = 3000 / 5000 = 0.6 < 1 → behind schedule
+        </p>
+        
+        <p>
+            So the current status of this project is over budget and behind schedule. My recommendation is that we should negotiate with the customer in order to increase the budget and reschedule.
+        </p>
+        
+        <h4>Forecast:</h4>
+        <p>
+            <strong>EAC:</strong> EAC = BAC / CPI = 9000 / 0.75 = 12000 $<br>
+            <strong>EDAC:</strong> EDAC = DAC / SPI = 12 / 0.6 = 20 months
+        </p>
+    </div>
+    <div style="width: 50%; padding-left: 30px;">
+
+    
+        <h3>Yêu Cầu 5: EVM</h3>
+        
+        <p>
+            <strong>EV:</strong> 3000<br>
+            <strong>AC:</strong> 4000<br>
+            <strong>PV:</strong> 5000<br>
+            <strong>BAC:</strong> 9000<br>
+            <strong>DAC:</strong> 12 tháng
+        </p>
+        
+        <h4>Biến Động Chi Phí (CV):</h4>
+        <p>
+            CV = EV - AC = 3000 - 4000 = -1000 < 0 → vượt ngân sách
+        </p>
+        
+        <h4>Biến Động Lịch Trình (SV):</h4>
+        <p>
+            SV = EV - PV = 3000 - 5000 = -2000 < 0 → chậm tiến độ
+        </p>
+        
+        <h4>Chỉ Số Hiệu Suất Chi Phí (CPI):</h4>
+        <p>
+            CPI = EV / AC = 3000 / 4000 = 0.75 < 1 → vượt ngân sách
+        </p>
+        
+        <h4>Chỉ Số Hiệu Suất Lịch Trình (SPI):</h4>
+        <p>
+            SPI = EV / PV = 3000 / 5000 = 0.6 < 1 → chậm tiến độ
+        </p>
+        
+        <p>
+            Hiện tại, trạng thái của dự án này là vượt ngân sách và chậm tiến độ. Đề xuất của tôi là chúng ta nên thương lượng với khách hàng để tăng ngân sách và điều chỉnh lịch trình.
+        </p>
+        
+        <h4>Dự Đoán:</h4>
+        <p>
+            <strong>EAC:</strong> EAC = BAC / CPI = 9000 / 0.75 = 12000 $<br>
+            <strong>EDAC:</strong> EDAC = DAC / SPI = 12 / 0.6 = 20 tháng
+        </p>
+    </div>
+        
+    </div>
+</body>
+
+</html>
