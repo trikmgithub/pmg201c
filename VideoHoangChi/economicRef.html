@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EVM</title>
+  <style>
+    body {
+      margin: 10px 30px;
+    }
+
+    body table {
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
+    .table1 th, .table1 td {
+      border: 1px solid
+    }
+
+    .table2 th, .table2 td {
+      border: 1px solid;
+      padding: 5px;
+    }
+
+    /* Khởi tạo các counter */
+    ol {
+      counter-reset: level1;
+      /* Reset bộ đếm cho level 1 */
+      list-style-type: none;
+      padding-left: 20px;
+    }
+
+    /* Level 1 styling */
+    li {
+      counter-increment: level1;
+      /* Tăng level 1 */
+    }
+
+    li::before {
+      content: counter(level1) ".0.0.0 ";
+      /* Định dạng level 1 */
+      padding-right: 5px;
+    }
+
+    /* Level 2 styling */
+    li ol {
+      counter-reset: level2;
+      /* Reset bộ đếm cho level 2 */
+      padding-left: 20px;
+    }
+
+    li ol li {
+      counter-increment: level2;
+      /* Tăng level 2 */
+    }
+
+    li ol li::before {
+      content: counter(level1) "." counter(level2) ".0.0 ";
+      /* Định dạng level 2 */
+    }
+
+    /* Level 3 styling */
+    li ol li ol {
+      counter-reset: level3;
+      /* Reset bộ đếm cho level 3 */
+      padding-left: 20px;
+    }
+
+    li ol li ol li {
+      counter-increment: level3;
+      /* Tăng level 3 */
+    }
+
+    li ol li ol li::before {
+      content: counter(level1) "." counter(level2) "." counter(level3) ".0";
+    }
+
+    /* Level 4 styling */
+    li ol li ol li ol {
+      counter-reset: level4;
+      padding-left: 20px;
+    }
+
+    li ol li ol li ol li {
+      counter-increment: level4;
+    }
+
+    li ol li ol li ol li::before {
+      content: counter(level1) "." counter(level2) "." counter(level3) "." counter(level4) " ";
+      /* Định dạng level 4 */
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Kiến thức kinh tế quản lý chi phí dự án <a href="./Slot_1.html">Slot1</a> <a href="../index.html">Home</a></h1>
+  <div style="display: flex; gap: 20px;">
+    <p>You are working on a project to launch a new dairy product for Vinamilk, assume it's a new kind of nut milk.
+      Based on knowledge about project management , assume that you have a team with 10 members, let make a plan for 3
+      months to launch this product. The plan should be included but not limited to these activities: pre lunch, lunch,
+      post lunch .
+    </p>
+    <p>Bạn đang làm việc trong một dự án để ra mắt một sản phẩm sữa mới cho Vinamilk, giả sử đó là một loại sữa hạt mới.
+      Dựa trên kiến thức về quản lý dự án, giả sử rằng bạn có một đội nhóm gồm 10 thành viên, hãy lập một kế hoạch cho 3
+      tháng để ra mắt sản phẩm này. Kế hoạch nên bao gồm nhưng không giới hạn ở các hoạt động: trước khi ra mắt, ra mắt,
+      sau khi ra mắt.</p>
+  </div>
+  <!-- request 1 -->
+  <div>
+    <div>
+      <h3>Request 1: Develop a WBS for the project. Break down the work to level 3 or 4 , as appropriate </h3>
+      <ol>
+        <li>New nut milk launching project - Level 1
+          <ol>
+            <li><b>Initiating - Level 2</b>
+              <ol>
+                <li>Kick off meeting - level 3</li>
+                <li>create a project charter
+                  <ol>
+                    <li>Solidifying the project scope - level 3</li>
+                    <li>Determine resources needed - level 3</li>
+                    <li>Define project goal and deliverables - level 3</li>
+                  </ol>
+                </li>
+                <li>get the project charter approved</li>
+                <li>Perform a cost - benefit analysis for the project - level 3</li>
+                <li>Create stakeholder register - level 3</li>
+              </ol>
+            </li>
+            <li><b>Planning - Level 2</b>
+              <ol>
+                <li>Develop project management plan - level 3
+                  <ol>
+                    <li>create scope management plan - level 4</li>
+                    <li>set the schedules / create time management plan - level 4</li>
+                    <li>creates the budget management plan - level 4</li>
+                    <li>creates risk management plan - level 4</li>
+                    <li>Define project communication and reporting plan - level 4</li>
+                    <li>creates resource management plan - level 4</li>
+                  </ol>
+                </li>
+                <li>Develop marketing plan - level 3
+                  <ol>
+                    <li>Conduct market research and analysis - level 4</li>
+                    <li>Define target market and customer segments - level 4</li>
+                    <li>Develop marketing message and positioning - level 4</li>
+                    <li>Develop marketing mix strategy (product, price, promotion, and place) - level 4</li>
+                  </ol>
+                </li>
+                <li>Develop product development plan - level 3
+                  <ol>
+                    <li>Define product concept and features - level 4</li>
+                    <li>Conduct product testing and validation - level 4</li>
+                    <li>Develop product recipe and prototype - level 4</li>
+                    <li>Define product packaging and branding strategy - level 4</li>
+                  </ol>
+                </li>
+                <li>Develop launch plan - level 3
+                  <ol>
+                    <li>Define launch timeline and milestones - level 4</li>
+                    <li>Develop launch event and promotion plan - level 4</li>
+                    <li>Define sales and distribution strategy - level 4</li>
+                  </ol>
+                </li>
+              </ol>
+            </li>
+            <li><b>Executing - Level 2</b>
+              <ol>
+                <li>Pre-launch - level 3
+                  <ol>
+                    <li>Finalize product recipe and packaging - level 4</li>
+                    <li>Conduct sensory testing and quality assurance - level 4</li>
+                    <li>Finalize marketing and launch event plan - level 4</li>
+                    <li>Train sales and distribution team - level 4</li>
+                  </ol>
+                </li>
+                <li>Launch - level 3
+                  <ol>
+                    <li>Execute launch event and promotion plan - level 4</li>
+                    <li>Start production and distribution - level 4</li>
+                    <li>Monitor sales and customer feedback - level 4</li>
+                    <li>Adjust marketing and sales strategies as needed - level 4</li>
+                  </ol>
+                </li>
+                <li>Post-launch - level 3
+                  <ol>
+                    <li>Conduct post-launch evaluation and analysis - level 4</li>
+                    <li>Collect and analyze sales data and customer feedback - level 4</li>
+                    <li>Identify opportunities for product improvement and marketing optimization - level 4</li>
+                  </ol>
+                </li>
+              </ol>
+            </li>
+            <li><b>Monitoring and Control - Level 2</b>
+              <ol>
+                <li>Monitor project progress and performance - level 3</li>
+                <li>Manage project risks and issues - level 3</li>
+                <li>Manage project adjustments to the schedule, budget and resources - level 3</li>
+                <li>Handle team’s communication and stakeholder engagement - level 3</li>
+              </ol>
+            </li>
+            <li><b>Closing - Level 2</b>
+              <ol>
+                <li>Conduct project review and lessons learned - level 3</li>
+                <li>Ensure all the tasks are completed - level 3</li>
+                <li>Archive project documents and deliverables - level 3</li>
+                <li>Celebrate project success and team achievements (Hold a close Project Ceremony) - level 3</li>
+              </ol>
+            </li>
+          </ol>
+        </li>
+      </ol>
+
+    </div>
+    <!-- Vietnamese -->
+     <div></div>
+  </div>
+  <!-- request 2 -->
+  <hr/>
+  <div>
+    <!-- English -->
+    <div>
+      <h3>Request 2 : Identify at least five milestones mapped to the main deliverables for the project. For each milestone, write a short explanation of how to measure its status completed or not</h3>
+      <table class="table1" style="border-collapse: collapse; width:auto;">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Milestone</th>
+            <th>Deliverable</th>
+            <th>Explanation when it's completed</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>finish closing stage</td>
+            <td>Lesson Learn
+              Final project report
+              Formal project closure documents
+              Project Archive
+              </td>
+            <td>All project deliverables have been completed and handed over to the stakeholders
+              All project documentation has been completed and archived 
+              The project team has conducted a final review of the project's outcomes and lessons learned.
+              </td>
+          </tr>
+        </tbody>
+      </table>
+      
+    </div>
+    <!-- Vietnamese -->
+    <div></div>
+  </div>
+  <!-- request 3 -->
+   <!-- task 3 -->
+    <div>
+      
+    </div>
+    <!-- EVM -->
+     <div>
+      <h3 style="color: blue;">Bảng tóm tắt tính toán giá trị thu được EVM - Earned Value Management</h3>
+      <h3 style="color: blue;">DAC duration at completion</h3>
+      <table class="table2" style="width: auto; border-collapse: collapse;">
+        <thead>
+          <tr>
+            <th colspan="7">PHÂN TÍCH GIÁ TRỊ THU ĐƯỢC</th>
+          </tr>
+          <tr>
+            <th>Viết tắt</th>
+            <th>Tên</th>
+            <th>Định nghĩa</th>
+            <th>Cách sử dụng</th>
+            <th>Công thức</th>
+            <th>Giải thích kết quả</th>
+            <th>Trí hiểu</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>PV = plan value</td>
+            <td>Giá trị kế hoạch</td>
+            <td>Ngân sách được cấp cho công việc theo kế hoạch</td>
+            <td>Giá trị của công việc kế hoạch được hoàn thành tới một thời điểm, thường là ngày dữ liệu, hoặc hoàn thành dự án.</td>
+            <td></td>
+            <td></td>
+            <td>Ví dụ có một bài tập: buget cho bài tập là 100k/10days
+              mỗi ngày thì ta phải đưa được 10k vào bài tập
+              => sau 3 ngày thì giá trị trong bài tập phải là 30k
+            </td>
+          </tr>
+          <tr>
+            <td>EV = earn value</td>
+            <td>Giá trị thu được</td>
+            <td>Phần công việc thực hiện được đo lường bằng ngân sách đã bỏ ra cho công việc đó.</td>
+            <td>Giá trị kế hoặc của tất cả công việc được hoàn thành (thu được) tại một thời điểm, thường là ngày dữ liệu, không nhắc đến chi phí thực tế</td>
+            <td>EV = tổng giá trị kế hoạch của công việc đã hoàn thành</td>
+            <td>
+              50% <br/>
+              20%
+            </td>
+            <td>Giá trị thực tế thu được: sau 2 ngày thì giá trị thực tế thu được là 20k</td>
+          </tr>
+          <tr>
+            <td>AC = actual cost</td>
+            <td>Chi phí thực tế</td>
+            <td>Chi phí phát sinh khi thực hiện công việc của một hoạt động trong một khoảng thời gian cụ thể.</td>
+            <td>Chi phí thực tế của tất cả công việc được hoàn thành tới một thời điểm, thường là ngày dữ liệu</td>
+            <td></td>
+            <td></td>
+            <td>Planning sau 3/10days thì ta đạt được 3/10 công việc. Nhưng sau 3 ngày thì ta chỉ hoàn thành được 2/10 công việc nhưng ta lại phải tốn chi phí lên tới 40k</td>
+          </tr>
+          <tr>
+            <td>BAC = budget at completion</td>
+            <td>Ngân sách khi hoàn thành</td>
+            <td>Tổng của tất cả ngân sách được thiết lập để thực hiện công việc.</td>
+            <td>Giá trị của tổng công việc kế hoạch, chi phí cơ sở dự án</td>
+            <td> budget  100000$
+              đươc đưa ra ở thơi điểm ban đầu dự án 
+              </td>
+            <td></td>
+            <td>Là bạn được cho 100k cho dự án được làm trong 10 ngày hoặc là buget 1m đô cho một dự án</td>
+          </tr>
+          <tr>
+            <td>CV = cost variance</td>
+            <td>Chênh lệch chi phí</td>
+            <td>Số tiền ngân sách thâm hụt hoặc thặng dư tại một thời điểm nhất định, thể hiện bằng chênh lệch giữa giá trị thu được và chi phí thực tế.</td>
+            <td>Chênh lệch giữa giá trị công việc hoàn thành tới một thời điểm, thường là ngày dữ liệu, và chi phí thực tế tới thời điểm đó.</td>
+            <td>CV = EV - AC</td>
+            <td>
+              Dương = Dưới chi phí <br/>
+              Trung bình = Đúng chi phí kế hoạch <br/>
+              Âm = Vượt chi phí kế hoạch <br/>
+            <td>Lấy giá trị đạt được trừ đi ngân sách bỏ ra</td>
+          </td>
+          </tr>
+          <tr>
+            <td>SV</td>
+            <td>Chênh lệch tiến độ</td>
+            <td>Thời gian mà dự án sớm hoặc trễ hơn ngày chuyển giao kế hoạch, tại một điểm thời gian, biểu diễn bằng chênh lệch giữa giá trị thu được và giá trị dự kiến.</td>
+            <td>Chênh lệch giữa công việc hoàn thành tới một thời điểm, thường là ngày dữ liệu, và công việc kế hoạch cần hoàn thành tới thời điểm đó.</td>
+            <td>SV = EV - PV</td>
+            <td>Dương = Sớm tiến độ <br/>
+              Trung bình = Đúng tiến độ <br/>
+              Âm = Trễ tiến độ <br>
+            <td>Giá trị thu được trừ đi giá trị planning</td>
+          </td>
+          </tr>
+          <tr>
+            <td>VAC = variance at completion</td>
+            <td>Chênh lệch khi hoàn thành</td>
+            <td>Dự báo số tiền thâm hụt ngân sách hoặc thặng dư, thể hiện như sự khác biệt giữa ngân sách khi hoàn thành và ước tính khi hoàn thành.</td>
+            <td>Chi phí chênh lệch ước lượng  tại lúc hoàn thành dự án </td>
+            <td>VAC = BAC – EAC</td>
+            <td>Dương = Dưới chi phí <br>
+              Trung bình = Đúng chi phí kế hoạch <br>
+              Âm = Vượt chi phí kế hoạch <br>
+            <td></td>
+          </td>
+          </tr>
+          <tr>
+            <td>CPI = Cost performace index</td>
+            <td>Chỉ số hiệu suất chi phí</td>
+            <td>Một thước đo hiệu quả chi phí của nguồn ngân sách được thể hiện bằng tỷ số giữa giá trị thu được với chi phí thực tế.</td>
+            <td>CPI là 1.0 có nghĩa là dự án đang theo đúng ngân sách, công việc được thực hiện cho tới hiện tại đúng ngân sách. Các giá trị khác thể hiện tỷ lệ chi phí vượt quá hoặc dưới khoản ngân sách cho công việc kế hoạch</td>
+            <td>CPI = EV/AC</td>
+            <td>Lớn hơn 1.0 = Dưới chi phí
+              Bằng 1.0 = Đúng chi phí kế hoạch
+              Nhỏ hơn 1.0 = Vượt chi phí kế hoạch
+            <td>Đến thời điểm kết thúc dự án chi hết bao nhiêu tiền</td>
+          </td>
+          </tr>
+          <tr>
+            <td>SPI = Schedule performance index</td>
+            <td>Chỉ số hiệu suất tiến độ</td>
+            <td>Một thước đo hiệu quả tiến độ thể hiện bằng tỷ số giữa giá trị thu được và giá trị kế hoạch.</td>
+            <td>SPI là 1.0 có nghĩa là dự án đang theo đúng tiến độ, công việc được thực hiện cho tới hiện tại đúng theo kế hoạch. Các giá trị khác thể hiện tỷ lệ chi phí vượt quá hoặc dưới khoản ngân sách cho công việc kế hoạch</td>
+            <td>SPI = EV/PV</td>
+            <td>Lớn hơn 1.0 = Sớm hơn tiến độ <br>
+              Bằng 1.0 = Đúng tiến độ <br>
+              Nhỏ hơn 1.0 = Trễ tiến độ<br>
+            <td>Mất bao nhiêu thời gian thì mới hoàn thành được</td>
+          </td>
+          </tr>
+          <tr>
+            <td style="color: red; border-color: black;">EAC = estimate at completiocompletion</td>
+            <td>Ước lượng chi phí thực tế khi hoàn thành</td>
+            <td>Tổng chi phí dự kiến để ​​hoàn thành toàn bộ các công việc được thể hiện bằng tổng các chi phí thực tế tính đến thời điểm hiện tại và và ước tính đến khi hoàn thành.</td>
+            <td>Nếu CPI là không đổi trong thời gian còn lại của dự án, EAC được tính bằng  (1):</td>
+            <td>(1) EAC = BAC/CPI</td>
+            <td>100k/0.5</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td style="color: red; border-color: black;">EDAC</td>
+            <td>Ước lượng tổng thời gian thực tế để  hoàn thành </td>
+            <td></td>
+            <td></td>
+            <td>EDAC = DAC/SPI 
+
+              20/40   0.5 
+              </td>
+            <td>DAC: Duration at completion  
+              10 / 0.5 
+              20 
+            <td></td>
+          </td>
+          </tr>
+          <tr>
+            <td>ETC = estimate to complete</td>
+            <td>Ước lượng tới khi hoàn thành</td>
+            <td>Chi phí dự tính để hoàn thành các công việc còn lại của dự án.</td>
+            <td>Giả sử công việc đang theo kế hoạch, chi phí để hoàn thành công việc còn lại được tính bằng:
+ 
+              Ước lượng lại công việc còn lại từ dưới lên.
+              </td>
+            <td>
+              ETC = EAC – AC <br>
+ 
+              ETC = Reestimate
+            </td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+     </div>
+</body>
+
+</html>
